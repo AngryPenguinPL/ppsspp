@@ -4,15 +4,16 @@
 
 Summary:	Sony PlayStation Portable (PSP) emulator
 Name:		ppsspp
-Version:	1.0
+Version:	1.6.1
 Release:	1
 License:	GPLv2+
 Group:		Emulators
 Url:		http://www.ppsspp.org
 # From git by tag https://github.com/hrydgard/ppsspp
 Source0:	%{name}-%{version}.tar.gz
+# Deprecated. Don't use. (penguin)
 # From git https://github.com/hrydgard/native
-Source1:	native-%{native_snapshot}.tar.bz2
+#Source1:	native-%{native_snapshot}.tar.bz2
 # From git https://github.com/hrydgard/ppsspp-lang
 Source2:	ppsspp-lang-%{lang_snapshot}.tar.bz2
 # From git https://github.com/Kingcom/armips
