@@ -1,6 +1,6 @@
-%define native_snapshot 02.02.2015
-%define lang_snapshot 02.02.2015
-%define armips_snapshot 20.01.2015
+#define native_snapshot 02.02.2015
+%define ppsspp-lang-master
+%define armips-0.10.0
 
 Summary:	Sony PlayStation Portable (PSP) emulator
 Name:		ppsspp
@@ -15,9 +15,9 @@ Source0:	%{name}-%{version}.tar.gz
 # From git https://github.com/hrydgard/native
 #Source1:	native-%{native_snapshot}.tar.bz2
 # From git https://github.com/hrydgard/ppsspp-lang
-Source2:	ppsspp-lang-%{lang_snapshot}.tar.bz2
+Source2:	ppsspp-lang-master.zip
 # From git https://github.com/Kingcom/armips
-Source3:	armips-%{armips_snapshot}.tar.bz2
+Source3:	armips-0.10.0.tar.gz
 Patch0:		ppsspp-0.8-git-version.patch
 Patch1:		ppsspp-0.9.9.1-datapath.patch
 # Can work with any ffmpeg but requires ffmpeg with Atrac3+ support for ingame music
