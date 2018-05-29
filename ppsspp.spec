@@ -59,11 +59,11 @@ rm -rf lang
 #tar -xf %{SOURCE1}
 #mv native-%{native_snapshot} native
 tar -xf %{SOURCE2}
-mv ppsspp-lang-%{lang_snapshot} lang
+mv ppsspp-lang-master lang
 pushd ext
 rm -rf armips
 tar -xf %{SOURCE3}
-mv armips-%{armips_snapshot} armips
+mv armips-0.10.0 armips
 popd
 
 %build
