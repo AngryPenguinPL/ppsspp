@@ -18,10 +18,10 @@ Source0:	%{name}-%{version}.tar.gz
 Source2:	ppsspp-lang-master.zip
 # From git https://github.com/Kingcom/armips
 Source3:	armips-0.10.0.tar.gz
-Patch0:		ppsspp-0.8-git-version.patch
-Patch1:		ppsspp-0.9.9.1-datapath.patch
+#Patch0:		ppsspp-0.8-git-version.patch
+#Patch1:		ppsspp-0.9.9.1-datapath.patch
 # Can work with any ffmpeg but requires ffmpeg with Atrac3+ support for ingame music
-Patch2:		ppsspp-1.0-ffmpeg.patch
+#Patch2:		ppsspp-1.0-ffmpeg.patch
 BuildRequires:	cmake
 BuildRequires:	imagemagick
 BuildRequires:	ffmpeg-devel
@@ -49,9 +49,9 @@ too blurry as they were made for the small screen of the original PSP.
 
 %prep
 %setup -q
-%patch0 -p1
-%patch1 -p1
-%patch2 -p1
+#patch0 -p1
+#patch1 -p1
+#patch2 -p1
 sed s,"unknown_version","%{version}",g -i git-version.cmake
 
 # Unpack external libraries from Native sub-project
