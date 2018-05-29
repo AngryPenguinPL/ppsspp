@@ -55,9 +55,9 @@ too blurry as they were made for the small screen of the original PSP.
 sed s,"unknown_version","%{version}",g -i git-version.cmake
 
 # Unpack external libraries from Native sub-project
-rm -rf native lang
-tar -xf %{SOURCE1}
-mv native-%{native_snapshot} native
+rm -rf lang
+#tar -xf %{SOURCE1}
+#mv native-%{native_snapshot} native
 tar -xf %{SOURCE2}
 mv ppsspp-lang-%{lang_snapshot} lang
 pushd ext
