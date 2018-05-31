@@ -31,6 +31,14 @@ BuildRequires:	pkgconfig(glu)
 BuildRequires:	pkgconfig(libpng)
 BuildRequires:	pkgconfig(sdl2)
 BuildRequires:	pkgconfig(zlib)
+BuildRequires:	pkgconfig(wayland-client)
+BuildRequires:	pkgconfig(glew)
+BuildRequires:	snappy-devel
+BuildRequires:	pkgconfig(libavcodec)
+BuildRequires:	pkgconfig(libavformat)
+BuildRequires:	pkgconfig(libavutil)
+BuildRequires:	pkgconfig(libswscale)
+BuildRequires:	pkgconfig(libswresample)
 
 %description
 PPSSPP is a cross-platform Sony PlayStation Portable (PSP) emulator.
